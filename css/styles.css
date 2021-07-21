@@ -31,7 +31,7 @@ ul {
 /*Cabecera*/
 
 .header {
-    padding: 20px 0px;
+    padding: 50px 0px;
     box-shadow: 0px 0px 10px gray;
 }
 
@@ -52,6 +52,10 @@ ul {
     padding-right: 10px;
 }
 
+.header > .container > a > h2 {
+    font-size: 35px;
+}
+
 .logo {
     height: 60px;
 }
@@ -68,6 +72,7 @@ ul {
 
 .nav li a {
     color: black;
+    font-size: 25px;
 }
 
 .nav li:hover {
@@ -129,7 +134,7 @@ ul {
     /* margin-top: 55px; */
     background-color: #051626;
     color: white;
-    padding: 20px 0px;
+    padding: 50px 0px;
 }
 
 .f-decoration {
@@ -161,4 +166,76 @@ ul {
 
 .text-copy {
     font-weight: 300;
+}
+
+/*Media queries*/
+
+@media (max-width: 946px) {
+    .nav li a{
+        font-size: 15px;
+    }
+
+    .principal-text-box > h1{  
+        font-size: 30px;
+    }
+    
+    .principal-text-box > h3 {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .image-programmer {
+        height: 200px;
+    }
+}
+
+@media (max-width: 707px) {
+    .footer > .container {
+        flex-direction: column;
+    }
+
+    .footer > .container > div {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 568px) {
+
+    .header {
+        padding-bottom: 0px;
+    }
+
+    .header > .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .nav li {
+        text-align: center;
+        padding: 0px;
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .text-w-programmer {
+        flex-direction: column;
+    }
+
+    .text-w-programmer .principal-text-box {
+        order: 2;
+        width: 80%;
+    }
+    
+    .text-w-programmer > .principal-text-box > h1 {
+        text-align: center;
+    }
+
+    .image-programmer {
+        height: 150px;
+    }
 }
