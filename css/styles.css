@@ -17,6 +17,10 @@ ul {
     list-style: none;
 }
 
+h1 {
+    color: #051626;
+}
+
 /*Utilidades*/
 
 .container {
@@ -128,6 +132,31 @@ ul {
 .image-programmer {
     height: 350px;
 }
+/*how it works section*/
+.how-it-works {
+    display: grid;
+    grid-template-rows: 150px 300px ;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 49px;
+    margin-bottom: 49px;
+}
+
+.title-hw {
+    align-self: center;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 35px;
+}
+
+.card-hw {
+    text-align: center;
+    display: grid;
+}
+
+.icon {
+    font-size: 120px;
+    color: #051626;
+}
 
 /*footer*/
 .footer {
@@ -187,6 +216,17 @@ ul {
 
     .image-programmer {
         height: 200px;
+    }
+}
+
+@media (max-width: 885px){
+    .how-it-works {
+        display: grid;
+        grid-template-rows: 150px 300px 300px 300px;
+    }
+
+    .card-hw {
+        grid-column: 1 / 4;
     }
 }
 
