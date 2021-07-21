@@ -123,3 +123,42 @@ ul {
 .image-programmer {
     height: 350px;
 }
+
+/*footer*/
+.footer {
+    /* margin-top: 55px; */
+    background-color: #051626;
+    color: white;
+    padding: 20px 0px;
+}
+
+.f-decoration {
+    background-color: #292c3f;
+    height: 25px;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    position: relative;
+    top: 12.5px;
+}
+
+.footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > .container > a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer > .container > a > img {
+    padding-right: 10px;
+}
+
+.text-copy {
+    font-weight: 300;
+}
