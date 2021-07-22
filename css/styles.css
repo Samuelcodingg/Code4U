@@ -197,6 +197,76 @@ h1 {
     font-weight: 300;
 }
 
+/* Contacto */
+
+.form-section {
+    width: 470px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px gray;
+    padding: 50px;
+    background-color: #272a34;
+    border-radius: 10px;
+}
+
+.form-section > h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > * {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    height: 40px;
+    color: white;
+}
+
+.form > textarea {
+    height: 100px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form > textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form > input[type=text],
+.form > textarea {
+    background-color: #272a34;
+}
+
+.form > input[type=text]:focus,
+.form > textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.form > input[type=submit] {
+    width: 30%;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #f39422;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.form > input[type=submit]:hover {
+    background-color: #d67a0c;
+}
+
 /*Media queries*/
 
 @media (max-width: 946px) {
@@ -240,6 +310,16 @@ h1 {
     }
 }
 
+@media (max-width: 590px) {
+    .form-section {
+        width: 300px;
+    }
+
+    .form-section input[type=submit] {
+        width: 45%;
+    }
+}
+
 @media (max-width: 568px) {
 
     .header {
@@ -277,5 +357,15 @@ h1 {
 
     .image-programmer {
         height: 150px;
+    }
+}
+
+@media (max-width: 409px) {
+    .form-section {
+        width: 200px;
+    }
+
+    .form-section input[type=submit]{
+        width: 70%;
     }
 }
