@@ -169,7 +169,36 @@ function validarEnviar(e){
         return false;
     }
 
-    
+    const enviando = document.createElement('p');
+    enviando.textContent = 'Enviando...';
+    enviando.style.fontSize = '16px';
+    enviando.style.fontWeight = '500';
+    enviando.style.padding = '10px 0';
+    enviando.style.border = 'none';
+    enviando.style.color = '#495057';
+
+    const mensajeEnviado = document.createElement('p');
+    mensajeEnviado.textContent = 'Tu mensaje fue enviado, gracias!';
+    mensajeEnviado.style.color = '#28a745';
+    mensajeEnviado.style.border = 'none';
+    mensajeEnviado.style.fontSize = '18px';
+
+    mensaje.parentElement.insertBefore(enviando, mensaje.nextSibling);
+
+    setTimeout( () => {
+        enviando.remove();
+        nombre.value = '';
+        email.value = '';
+        asunto.value = '';
+        mensaje.value = '';
+        
+        nombre.parentElement.insertBefore(mensajeEnviado, nombre);
+    },5000);
+
+
+    setTimeout( () => {
+        mensajeEnviado.remove();
+    },10000);
 }
 
 function cumpleLongitud(palabra){
