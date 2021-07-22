@@ -12,11 +12,17 @@ document.addEventListener('DOMContentLoaded', function(){
     //Validar nombre
     nombre.addEventListener('blur', validarNombre);
 
+    //Validar email
+    email.addEventListener('blur',validarEmail);
+
     //Validar asunto
     asunto.addEventListener('blur',validarAsunto);
 
     //Validar mensaje
     mensaje.addEventListener('blur',validarMensaje);
+
+    //Validar enviar
+    enviar.addEventListener('click',validarEnviar);
 });
 
 function validarNombre(e){   
@@ -70,6 +76,47 @@ function validarMensaje(e){
     }
 
     return true;
+}
+
+function validarEmail(e){
+
+    if(e.target.nextSibling.tagName == 'P'){
+        e.target.nextSibling.remove();
+    }
+
+    if(!cumpleLongitud(e.target.value)){
+
+        if(e.target.nextSibling.tagName != 'P'){ 
+            mensajeError(e.target, 'Por favor, ingresa el email');
+        }
+
+        return false;
+    }
+
+    if(e.target.nextSibling.tagName == 'P'){
+        e.target.nextSibling.remove();
+    }
+
+    if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(e.target.value)){
+        if(e.target.nextSibling.tagName != 'P'){ 
+            mensajeError(e.target, 'Por favor, ingresa un email válido');
+        }
+        return false;
+    }
+
+    if(e.target.nextSibling.tagName == 'P'){
+        e.target.nextSibling.remove();
+    }
+
+    return true;
+}
+
+function validarEnviar(e) {
+    e.preventDefault();
+
+
+
+
 }
 
 function cumpleLongitud(palabra){
