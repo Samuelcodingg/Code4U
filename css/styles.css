@@ -267,6 +267,67 @@ h1 {
     background-color: #d67a0c;
 }
 
+/*Cursos*/
+
+.courses {
+    display: grid;
+    grid-template-rows: 50px 80px 440px 440px 440px 440px;
+    /* column-gap: 5%; */
+    grid-template-columns: repeat(3,1fr);
+}
+
+.title-courses {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.sort-container {
+    grid-column: 1 / 4;
+}
+
+.img-card {
+    height: 250px;
+}
+
+.course-card {
+    box-shadow: 0px 0px 4px gray;
+    margin-top: 30px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-card {
+    padding: 15px;
+}
+
+.content-card h2 {
+    font-size: 18px;
+    color: #051626;
+}
+
+.content-card p {
+    margin-top: 10px;
+    color: green;
+}
+
+.button-add {
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px 0px;
+    border: none;
+    background-color: #163857;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.button-add:hover {
+    background-color: #051626;
+}
+
 /*Media queries*/
 
 @media (max-width: 946px) {
