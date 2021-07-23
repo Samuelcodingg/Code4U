@@ -70,17 +70,17 @@ h1 {
 }
 
 .nav li {
-    transition: all 300ms;
     padding-right: 40%;
 }
 
 .nav li a {
     color: black;
     font-size: 25px;
+    transition: all 300ms;
 }
 
-.nav li:hover {
-    transform: scale(1.5,1.5);
+.nav li a:hover{
+    font-size: 30px;
 }
 
 /*Seccion landing*/
@@ -279,11 +279,34 @@ h1 {
 .title-courses {
     grid-column: 1 / 7;
     text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
 }
 
 .sort-container {
     grid-column: 1 / 7;
+    margin-top: 30px;
 }
+
+.sort-container > p {
+    font-weight: 400;
+    color: #bbb;
+    font-size: 18px;
+}
+
+.sort-container > select {
+    margin-top: 10px;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sort-container > select:focus {
+    outline: none;
+}
+
 
 .img-card {
     height: 250px;
