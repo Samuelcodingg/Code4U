@@ -312,25 +312,7 @@ h1 {
 .sort-container {
     grid-column: 1 / 7;
     margin-top: 30px;
-}
-
-.sort-container > div > p {
-    font-weight: 400;
-    color: #bbb;
-    font-size: 18px;
-}
-
-.sort-container > div > select {
-    margin-top: 10px;
-    border: none;
-    padding-bottom: 5px;
-    border-bottom: 1px solid gray;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.sort-container > div > select:focus {
-    outline: none;
+    opacity: 0;
 }
 
 .img-card {

@@ -32,7 +32,7 @@
                                 <td>Cantidad</td>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="cuerpoCarrito">
                         </tbody>
                     </table>
                 </div>
@@ -48,133 +48,125 @@
                 <h1>Cursos disponibles</h1>
             </div>
             <div class="sort-container">
-                <div>
-                    <p>Ordenar por: </p>
-                    <select name="" id="ordenar">
-                        <option value="">Seleccione</option>
-                        <option value="" id="menor-mayor">Precio de menor a mayor</option>
-                        <option value="" id="mayor-menor">Precio de mayor a menor</option>
-                    </select>
-                </div>
                 
 
             </div>
-            <div class="course-card first-column first-column-md one-column">
+            <div class="course-card first-column first-column-md one-column" data-id="1">
                 <img class="img-card" src="img/html-css.jpg" alt="">
                 <div class="content-card">
                     <h2>Maquetación web con HTML5 y CSS3</h2>
                     <div>
-                        <p>S/</p><p>50</p>
+                        <p>S/50</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card second-column second-column-md one-column">
+            <div class="course-card second-column second-column-md one-column" data-id="2">
                 <img class="img-card" src="img/js-logo.png" alt="">
                 <div class="content-card">
                     <h2>Fundamentos de frontend con JavaScript</h2>
                     <div>
-                        <p>S/</p><p>50</p>
+                        <p>S/50</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card third-column first-column-md one-column">
+            <div class="course-card third-column first-column-md one-column" data-id="3">
                 <img class="img-card" src="img/javascript-framework-guide.png" alt="">
                 <div class="content-card">   
                     <h2>Angular JS, Vue JS y React JS</h2>
                     <div>
-                        <p>S/</p><p>100</p>
+                        <p>S/100</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card first-column second-column-md one-column">
+            <div class="course-card first-column second-column-md one-column" data-id="4">
                 <img class="img-card" src="img/laravel-logo.png" alt="">
                 <div class="content-card">
                     <h2>Máster en PHP, Laravel y Wordpress</h2>
                     <div>
-                        <p>S/</p><p>85</p>
+                        <p>S/85</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card second-column first-column-md one-column">
+            <div class="course-card second-column first-column-md one-column" data-id="5">
                 <img class="img-card" src="img/mysql.jpg" alt="">
                 <div class="content-card">
                     <h2>Bases de datos SQL con MySQL</h2>
                     <div>
-                        <p>S/</p><p>85</p>
+                        <p>S/85</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">                    
                 </div>
             </div>
-            <div class="course-card third-column second-column-md one-column">
+            <div class="course-card third-column second-column-md one-column" data-id="6">
                 <img class="img-card" src="img/nodejs.jpg" alt="">
                 <div class="content-card">
                     <h2>Backend con NodeJS</h2>
                     <div>
-                        <p>S/</p><p>75</p>
+                        <p>S/75</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card first-column first-column-md one-column">
+            <div class="course-card first-column first-column-md one-column" data-id="7">
                 <img class="img-card" src="img/python.png" alt="">
                 <div class="content-card">
                     <h2>Máster en Python, Flask y Django</h2>
                     <div>
-                        <p>S/</p><p>90</p>
+                        <p>S/90</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card second-column second-column-md one-column">
+            <div class="course-card second-column second-column-md one-column" data-id="8">
                 <img class="img-card" src="img/tux_kernel.jpg" alt="">
                 <div class="content-card">
                     <h2>Introducción a Linux</h2>
                     <div>
-                        <p>S/</p><p>60</p>
+                        <p>S/60</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card third-column first-column-md one-column">
+            <div class="course-card third-column first-column-md one-column" data-id="9">
                 <img class="img-card" src="img/vim2.png" alt="">
                 <div class="content-card">
                     <h2>Sé más productivo con Vim</h2>
                     <div>
-                        <p>S/</p><p>50</p>
+                        <p>S/50</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card first-column second-column-md one-column">
+            <div class="course-card first-column second-column-md one-column" data-id="10">
                 <img class="img-card" src="img/net.jpg" alt="">
                 <div class="content-card">
                     <h2>Máster en .NET C# MVC</h2>
                     <div>
-                        <p>S/</p><p>90</p>
+                        <p>S/90</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card second-column first-column-md one-column">
+            <div class="course-card second-column first-column-md one-column" data-id="11">
                 <img class="img-card" src="img/spring.png" alt="">
                 <div class="content-card">
                     <h2>Java con Spring MVC</h2>
                     <div>
-                        <p>S/</p><p>75</p>
+                        <p>S/75</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
             </div>
-            <div class="course-card third-column second-column-md one-column">
+            <div class="course-card third-column second-column-md one-column" data-id="12">
                 <img class="img-card" src="img/android-studio.jpg" alt="">
                 <div class="content-card">
                     <h2>Desarrollo móvil con Android Studio</h2>
                     <div>
-                        <p>S/</p><p>80</p>
+                        <p>S/80</p>
                     </div>
                     <input class="button-add" type="submit" value="Añadir al carrito">
                 </div>
@@ -195,7 +187,7 @@
         </div>
     </footer>
 
-    <script src="js/filtrar.js"></script>
+    <script src="js/carrito.js"></script>
     <script src="https://kit.fontawesome.com/57888ec9eb.js" crossorigin="anonymous"></script>
 </body>
 </html>
