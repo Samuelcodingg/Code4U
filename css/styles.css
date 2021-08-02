@@ -427,19 +427,10 @@ h1 {
     .one-column {
         grid-column: 1 / 7;
     }
-}
 
-@media (max-width: 590px) {
-    .form-section {
-        width: 300px;
+    .cart-table {
+        left: 120px;
     }
-
-    .form-section input[type=submit] {
-        width: 45%;
-    }
-}
-
-@media (max-width: 568px) {
 
     .header {
         padding-bottom: 0px;
@@ -466,6 +457,21 @@ h1 {
         font-size: 20px;
     }
 
+}
+
+@media (max-width: 590px) {
+    .form-section {
+        width: 300px;
+    }
+
+    .form-section input[type=submit] {
+        width: 45%;
+    }
+}
+
+@media (max-width: 568px) {
+
+
     .text-w-programmer {
         flex-direction: column;
     }
@@ -482,6 +488,10 @@ h1 {
     .image-programmer {
         height: 150px;
     }
+
+    .cart-table {
+        left: 20px;
+    }
 }
 
 @media (max-width: 409px) {
@@ -491,5 +501,9 @@ h1 {
 
     .form-section input[type=submit]{
         width: 70%;
+    }
+
+    .cart-table {
+        left: 5px;
     }
 }
